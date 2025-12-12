@@ -545,7 +545,7 @@ const steps = [
   background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(78, 205, 196, 0.1));
   backdrop-filter: blur(20px);
   border-radius: 30px;
-  padding: 5rem 4rem 5rem 4rem;
+  padding: 5rem 5rem 5rem 5rem;
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.2);
   position: relative;
@@ -553,6 +553,7 @@ const steps = [
   height: auto;
   min-height: 300px;
   display: block;
+  width: 100%;
 }
 
 .cta-card::before {
@@ -580,8 +581,12 @@ const steps = [
   position: relative;
   z-index: 10;
   word-break: keep-all;
-  line-height: 1.5;
-  padding: 1rem 1.5rem;
+  line-height: 1.6;
+  padding: 1rem 2rem;
+  width: 100%;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
 }
 
 .cta-card p {
