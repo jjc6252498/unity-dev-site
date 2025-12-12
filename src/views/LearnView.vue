@@ -557,7 +557,7 @@ const steps = [
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 80%;
   max-width: 800px;
   min-width: 200px;
   box-sizing: border-box;
