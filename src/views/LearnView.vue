@@ -539,6 +539,7 @@ const steps = [
   overflow: visible;
   position: relative;
   z-index: 100;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -558,7 +559,7 @@ const steps = [
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  width: 100%;
   max-width: 800px;
   min-width: 200px;
   box-sizing: border-box;
