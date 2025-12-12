@@ -332,13 +332,16 @@ const steps = [
 
 .feature-card {
   position: relative;
-  padding: 2.5rem;
+  padding: 3rem 2.5rem;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   border-radius: 24px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  overflow: hidden;
+  overflow: visible;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
 }
 
 .feature-card::before {
@@ -397,6 +400,8 @@ const steps = [
   background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
   transform: translateX(-100%);
   transition: transform 0.6s;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .feature-card:hover .card-shine {
@@ -432,12 +437,16 @@ const steps = [
 
 .step-card {
   position: relative;
-  padding: 2.5rem;
+  padding: 3rem 2.5rem;
   background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(10px);
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
+  overflow: visible;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
 }
 
 .step-card:hover {
@@ -447,14 +456,22 @@ const steps = [
 }
 
 .step-number {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 800;
   background: linear-gradient(135deg, var(--step-color), transparent);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   line-height: 1;
+  flex-shrink: 0;
+}
+
+.step-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
 
 .step-content h4 {
@@ -480,6 +497,7 @@ const steps = [
   height: 3px;
   background: linear-gradient(90deg, var(--step-color), transparent);
   transition: width 0.4s ease;
+  border-radius: 0 0 20px 20px;
 }
 
 .step-card:hover .step-line {
