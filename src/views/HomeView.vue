@@ -256,11 +256,12 @@ onMounted(() => {
 }
 
 .hero-title {
-  font-size: clamp(2.5rem, 7vw, 6rem);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: 800;
-  line-height: 1.1;
-  margin-bottom: 2rem;
-  letter-spacing: -0.04em;
+  line-height: 1.2;
+  margin-bottom: 2.5rem;
+  letter-spacing: -0.02em;
+  word-break: keep-all;
 }
 
 .title-line {
@@ -293,11 +294,12 @@ onMounted(() => {
 }
 
 .hero-subtitle {
-  font-size: clamp(1.1rem, 2vw, 1.4rem);
-  color: rgba(255, 255, 255, 0.7);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: rgba(255, 255, 255, 0.85);
   margin-bottom: 3rem;
-  line-height: 1.6;
+  line-height: 1.8;
   font-weight: 400;
+  max-width: 700px;
 }
 
 .cta-group {
@@ -434,16 +436,18 @@ onMounted(() => {
 }
 
 .feature-card h3 {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   font-weight: 700;
-  margin-bottom: 0.8rem;
-  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+  letter-spacing: -0.01em;
+  word-break: keep-all;
 }
 
 .feature-card p {
-  font-size: 1rem;
-  color: rgba(255, 255, 255, 0.7);
-  line-height: 1.6;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.7;
+  word-break: keep-all;
 }
 
 .scroll-indicator {

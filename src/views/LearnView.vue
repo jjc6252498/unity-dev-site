@@ -298,11 +298,12 @@ const steps = [
 }
 
 .title {
-  font-size: clamp(3rem, 7vw, 5rem);
+  font-size: clamp(2.5rem, 6vw, 4rem);
   font-weight: 800;
-  margin-bottom: 1.5rem;
-  letter-spacing: -0.04em;
-  line-height: 1.1;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  word-break: keep-all;
 }
 
 .gradient-text {
@@ -313,9 +314,10 @@ const steps = [
 }
 
 .subtitle {
-  font-size: 1.3rem;
-  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.75);
   margin-bottom: 1rem;
+  line-height: 1.6;
 }
 
 .features-section {
@@ -368,20 +370,22 @@ const steps = [
 }
 
 .feature-card h3 {
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   position: relative;
   z-index: 1;
+  word-break: keep-all;
 }
 
 .feature-card p {
-  font-size: 1.05rem;
-  color: rgba(255, 255, 255, 0.7);
-  line-height: 1.6;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.7;
   position: relative;
   z-index: 1;
+  word-break: keep-all;
 }
 
 .card-shine {
@@ -404,18 +408,20 @@ const steps = [
 }
 
 .section-title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 800;
-  margin-bottom: 1rem;
-  letter-spacing: -0.03em;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
   text-align: center;
+  word-break: keep-all;
 }
 
 .section-subtitle {
   text-align: center;
-  font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.75);
   margin-bottom: 4rem;
+  line-height: 1.6;
 }
 
 .steps {
@@ -452,15 +458,18 @@ const steps = [
 }
 
 .step-content h4 {
-  font-size: 1.4rem;
+  font-size: 1.25rem;
   font-weight: 700;
-  margin-bottom: 0.8rem;
-  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+  letter-spacing: -0.01em;
+  word-break: keep-all;
 }
 
 .step-content p {
-  color: rgba(255, 255, 255, 0.7);
-  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.7;
+  word-break: keep-all;
+  font-size: 0.95rem;
 }
 
 .step-line {
@@ -509,20 +518,23 @@ const steps = [
 }
 
 .cta-card h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 800;
-  margin-bottom: 1rem;
-  letter-spacing: -0.03em;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
   position: relative;
   z-index: 1;
+  word-break: keep-all;
 }
 
 .cta-card p {
-  font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
   margin-bottom: 2.5rem;
   position: relative;
   z-index: 1;
+  line-height: 1.6;
+  word-break: keep-all;
 }
 
 .cta-buttons {
