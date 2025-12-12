@@ -555,10 +555,12 @@ const steps = [
   overflow: visible;
   height: auto;
   min-height: 300px;
-  display: block;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
   max-width: 800px;
-  min-width: 280px;
+  min-width: 200px;
   box-sizing: border-box;
   z-index: 100;
   margin: 0 auto;
