@@ -238,6 +238,7 @@ onMounted(() => {
   padding: 0 3rem;
   position: relative;
   z-index: 1;
+  overflow: visible;
 }
 
 .hero-content {
@@ -246,6 +247,7 @@ onMounted(() => {
   width: 100%;
   position: relative;
   z-index: 10;
+  overflow: visible;
 }
 
 .badge {
@@ -262,7 +264,7 @@ onMounted(() => {
 .hero-title {
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: 800;
-  line-height: 1.3;
+  line-height: 1.4;
   margin-bottom: 2.5rem;
   letter-spacing: -0.02em;
   word-break: keep-all;
@@ -270,6 +272,7 @@ onMounted(() => {
   white-space: normal;
   position: relative;
   z-index: 10;
+  padding: 0.5rem 0;
 }
 
 .title-line {
@@ -277,6 +280,8 @@ onMounted(() => {
   animation: slideUp 0.8s ease-out backwards;
   white-space: normal;
   overflow-wrap: break-word;
+  padding: 0.3rem 0;
+  margin: 0.2rem 0;
 }
 
 .title-line:nth-child(2) { animation-delay: 0.1s; }
