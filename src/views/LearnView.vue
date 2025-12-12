@@ -338,7 +338,7 @@ const steps = [
 
 .feature-card {
   position: relative;
-  padding: 2.5rem 2rem 2.5rem 2rem;
+  padding: 3rem 2.5rem 3rem 2.5rem;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   border-radius: 24px;
@@ -346,6 +346,7 @@ const steps = [
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   height: auto;
   display: block;
+  min-height: 240px;
 }
 
 .feature-card::before {
@@ -372,7 +373,7 @@ const steps = [
 
 .feature-icon {
   font-size: 2.5rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
   display: block;
   line-height: 1;
 }
@@ -392,12 +393,14 @@ const steps = [
 .feature-card p {
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.8);
-  line-height: 1.7;
+  line-height: 1.8;
   position: relative;
   z-index: 1;
   word-break: keep-all;
   white-space: normal;
   overflow-wrap: break-word;
+  margin-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .card-shine {
@@ -448,7 +451,7 @@ const steps = [
 
 .step-card {
   position: relative;
-  padding: 2.5rem 2rem 2.5rem 2rem;
+  padding: 3rem 2.5rem 3rem 2.5rem;
   background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(10px);
   border-radius: 20px;
@@ -456,6 +459,7 @@ const steps = [
   transition: all 0.3s ease;
   height: auto;
   display: block;
+  min-height: 220px;
 }
 
 .step-card:hover {
@@ -493,11 +497,13 @@ const steps = [
 
 .step-content p {
   color: rgba(255, 255, 255, 0.8);
-  line-height: 1.7;
+  line-height: 1.8;
   word-break: keep-all;
   font-size: 0.95rem;
   white-space: normal;
   overflow-wrap: break-word;
+  margin-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .step-line {
