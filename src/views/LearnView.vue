@@ -334,11 +334,12 @@ const steps = [
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
   width: 100%;
+  overflow: visible;
 }
 
 .feature-card {
   position: relative;
-  padding: 3rem 2.5rem 3rem 2.5rem;
+  padding: 3rem 3.5rem 3rem 3rem;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   border-radius: 24px;
@@ -347,6 +348,7 @@ const steps = [
   height: auto;
   display: block;
   min-height: 240px;
+  overflow: visible;
 }
 
 .feature-card::before {
@@ -354,11 +356,15 @@ const steps = [
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
   background: linear-gradient(135deg, var(--card-color) 0%, transparent 100%);
   opacity: 0;
   transition: opacity 0.4s ease;
+  z-index: -1;
+  border-radius: 24px;
 }
 
 .feature-card:hover {
@@ -384,7 +390,7 @@ const steps = [
   margin-bottom: 1rem;
   letter-spacing: -0.01em;
   position: relative;
-  z-index: 1;
+  z-index: 10;
   word-break: keep-all;
   white-space: normal;
   overflow-wrap: break-word;
@@ -395,12 +401,13 @@ const steps = [
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.8;
   position: relative;
-  z-index: 1;
+  z-index: 10;
   word-break: keep-all;
   white-space: normal;
   overflow-wrap: break-word;
   margin-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
 }
 
 .card-shine {
@@ -413,7 +420,7 @@ const steps = [
   transform: translateX(-100%);
   transition: transform 0.6s;
   pointer-events: none;
-  z-index: 0;
+  z-index: -1;
 }
 
 .feature-card:hover .card-shine {
@@ -451,7 +458,7 @@ const steps = [
 
 .step-card {
   position: relative;
-  padding: 3rem 2.5rem 3rem 2.5rem;
+  padding: 3rem 3.5rem 3rem 3rem;
   background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(10px);
   border-radius: 20px;
@@ -460,6 +467,7 @@ const steps = [
   height: auto;
   display: block;
   min-height: 220px;
+  overflow: visible;
 }
 
 .step-card:hover {
@@ -493,6 +501,8 @@ const steps = [
   word-break: keep-all;
   white-space: normal;
   overflow-wrap: break-word;
+  position: relative;
+  z-index: 10;
 }
 
 .step-content p {
@@ -503,7 +513,10 @@ const steps = [
   white-space: normal;
   overflow-wrap: break-word;
   margin-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  position: relative;
+  z-index: 10;
 }
 
 .step-line {
