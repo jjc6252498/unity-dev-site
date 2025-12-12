@@ -539,6 +539,9 @@ const steps = [
   overflow: visible;
   position: relative;
   z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cta-card {
@@ -554,9 +557,11 @@ const steps = [
   min-height: 300px;
   display: block;
   width: 100%;
+  max-width: 800px;
   min-width: 280px;
   box-sizing: border-box;
   z-index: 100;
+  margin: 0 auto;
 }
 
 .cta-card::before {
