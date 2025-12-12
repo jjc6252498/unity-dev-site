@@ -198,7 +198,6 @@ const steps = [
   background: linear-gradient(135deg, #FFE66D, #FFF19E);
   top: 20%;
   right: 10%;
-  animation: float 25s infinite ease-in-out;
 }
 
 .shape-2 {
@@ -207,7 +206,6 @@ const steps = [
   background: linear-gradient(135deg, #A8E6CF, #C1F0E0);
   bottom: 10%;
   left: 5%;
-  animation: float 20s infinite ease-in-out reverse;
 }
 
 @keyframes float {
@@ -539,10 +537,10 @@ const steps = [
   overflow: visible;
   position: relative;
   z-index: 100;
-  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 2rem;
 }
 
 .cta-card {
