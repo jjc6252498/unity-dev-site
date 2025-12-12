@@ -115,7 +115,8 @@ onMounted(() => {
   background: #0f0f1e;
   color: #fff;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 .bg-gradient {
@@ -262,9 +263,9 @@ onMounted(() => {
 }
 
 .hero-title {
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-size: clamp(2.8rem, 6vw, 4.5rem);
   font-weight: 800;
-  line-height: 1.4;
+  line-height: 1.5;
   margin-bottom: 2.5rem;
   letter-spacing: -0.02em;
   word-break: keep-all;
@@ -272,7 +273,7 @@ onMounted(() => {
   white-space: normal;
   position: relative;
   z-index: 10;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
 }
 
 .title-line {
@@ -280,8 +281,9 @@ onMounted(() => {
   animation: slideUp 0.8s ease-out backwards;
   white-space: normal;
   overflow-wrap: break-word;
-  padding: 0.3rem 0;
-  margin: 0.2rem 0;
+  padding: 0.5rem 0;
+  margin: 0.3rem 0;
+  min-height: 1.5em;
 }
 
 .title-line:nth-child(2) { animation-delay: 0.1s; }
