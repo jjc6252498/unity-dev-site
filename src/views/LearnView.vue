@@ -546,7 +546,7 @@ const steps = [
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.2);
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .cta-card::before {
@@ -558,6 +558,7 @@ const steps = [
   height: 200%;
   background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.05), transparent);
   animation: shimmer 3s infinite;
+  z-index: -1;
 }
 
 @keyframes shimmer {
@@ -571,8 +572,10 @@ const steps = [
   margin-bottom: 1.5rem;
   letter-spacing: -0.02em;
   position: relative;
-  z-index: 1;
+  z-index: 10;
   word-break: keep-all;
+  line-height: 1.5;
+  padding: 0.5rem 1rem;
 }
 
 .cta-card p {
@@ -580,9 +583,10 @@ const steps = [
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 2.5rem;
   position: relative;
-  z-index: 1;
-  line-height: 1.6;
+  z-index: 10;
+  line-height: 1.8;
   word-break: keep-all;
+  padding: 0 1rem;
 }
 
 .cta-buttons {
@@ -591,7 +595,7 @@ const steps = [
   justify-content: center;
   flex-wrap: wrap;
   position: relative;
-  z-index: 1;
+  z-index: 10;
 }
 
 .btn-primary,
