@@ -161,7 +161,8 @@ const steps = [
   background: #0f0f1e;
   color: #fff;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 .bg-gradient {
@@ -279,6 +280,7 @@ const steps = [
   padding: 10rem 3rem 6rem;
   position: relative;
   z-index: 1;
+  overflow: visible;
 }
 
 .intro-section {
@@ -322,12 +324,14 @@ const steps = [
 
 .features-section {
   margin-bottom: 10rem;
+  overflow: visible;
 }
 
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
+  width: 100%;
 }
 
 .feature-card {
@@ -339,7 +343,7 @@ const steps = [
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: visible;
-  min-height: 280px;
+  height: auto;
   display: flex;
   flex-direction: column;
 }
@@ -410,6 +414,7 @@ const steps = [
 
 .steps-section {
   margin-bottom: 8rem;
+  overflow: visible;
 }
 
 .section-title {
@@ -433,6 +438,7 @@ const steps = [
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
+  width: 100%;
 }
 
 .step-card {
@@ -444,7 +450,7 @@ const steps = [
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
   overflow: visible;
-  min-height: 240px;
+  height: auto;
   display: flex;
   flex-direction: column;
 }
