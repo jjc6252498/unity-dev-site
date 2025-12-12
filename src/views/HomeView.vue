@@ -129,6 +129,7 @@ onMounted(() => {
               radial-gradient(circle at 50% 80%, rgba(255, 230, 109, 0.1) 0%, transparent 50%);
   transition: transform 0.3s ease-out;
   pointer-events: none;
+  z-index: 0;
 }
 
 .bg-shapes {
@@ -136,6 +137,7 @@ onMounted(() => {
   width: 100%;
   height: 100%;
   pointer-events: none;
+  z-index: 0;
 }
 
 .shape {
@@ -242,6 +244,8 @@ onMounted(() => {
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
+  position: relative;
+  z-index: 10;
 }
 
 .badge {
@@ -258,15 +262,21 @@ onMounted(() => {
 .hero-title {
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: 800;
-  line-height: 1.2;
+  line-height: 1.3;
   margin-bottom: 2.5rem;
   letter-spacing: -0.02em;
   word-break: keep-all;
+  overflow-wrap: break-word;
+  white-space: normal;
+  position: relative;
+  z-index: 10;
 }
 
 .title-line {
   display: block;
   animation: slideUp 0.8s ease-out backwards;
+  white-space: normal;
+  overflow-wrap: break-word;
 }
 
 .title-line:nth-child(2) { animation-delay: 0.1s; }
@@ -376,6 +386,8 @@ onMounted(() => {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   max-width: 1200px;
+  position: relative;
+  z-index: 10;
 }
 
 .feature-card {
@@ -386,7 +398,7 @@ onMounted(() => {
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
-  overflow: hidden;
+  z-index: 10;
 }
 
 .feature-card::before {
@@ -441,6 +453,10 @@ onMounted(() => {
   margin-bottom: 1rem;
   letter-spacing: -0.01em;
   word-break: keep-all;
+  white-space: normal;
+  overflow-wrap: break-word;
+  position: relative;
+  z-index: 2;
 }
 
 .feature-card p {
@@ -448,6 +464,10 @@ onMounted(() => {
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.7;
   word-break: keep-all;
+  white-space: normal;
+  overflow-wrap: break-word;
+  position: relative;
+  z-index: 2;
 }
 
 .scroll-indicator {

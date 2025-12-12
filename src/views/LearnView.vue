@@ -174,6 +174,7 @@ const steps = [
   background: radial-gradient(circle at 40% 40%, rgba(255, 107, 107, 0.1) 0%, transparent 50%),
               radial-gradient(circle at 60% 60%, rgba(78, 205, 196, 0.1) 0%, transparent 50%);
   pointer-events: none;
+  z-index: 0;
 }
 
 .bg-shapes {
@@ -181,6 +182,7 @@ const steps = [
   width: 100%;
   height: 100%;
   pointer-events: none;
+  z-index: 0;
 }
 
 .shape {
@@ -279,7 +281,7 @@ const steps = [
   margin: 0 auto;
   padding: 10rem 3rem 6rem;
   position: relative;
-  z-index: 1;
+  z-index: 10;
   overflow: visible;
 }
 
