@@ -538,7 +538,7 @@ const steps = [
   margin-bottom: 6rem;
   overflow: visible;
   position: relative;
-  z-index: 10;
+  z-index: 100;
 }
 
 .cta-card {
@@ -556,6 +556,7 @@ const steps = [
   width: 100%;
   min-width: 280px;
   box-sizing: border-box;
+  z-index: 100;
 }
 
 .cta-card::before {
@@ -581,7 +582,7 @@ const steps = [
   margin-bottom: 2rem;
   letter-spacing: -0.02em;
   position: relative;
-  z-index: 10;
+  z-index: 200;
   line-height: 1.6;
   padding: 1rem 2rem;
   width: 100%;
@@ -597,7 +598,7 @@ const steps = [
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 3rem;
   position: relative;
-  z-index: 10;
+  z-index: 200;
   line-height: 1.8;
   padding: 0 1rem;
   word-wrap: break-word;
@@ -611,7 +612,7 @@ const steps = [
   justify-content: center;
   flex-wrap: wrap;
   position: relative;
-  z-index: 10;
+  z-index: 200;
   padding-bottom: 1rem;
 }
 
@@ -625,6 +626,8 @@ const steps = [
   cursor: pointer;
   transition: all 0.3s ease;
   white-space: nowrap;
+  position: relative;
+  z-index: 200;
 }
 
 .btn-primary {
