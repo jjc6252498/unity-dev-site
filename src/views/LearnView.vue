@@ -535,18 +535,24 @@ const steps = [
 }
 
 .cta-section {
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
+  overflow: visible;
+  position: relative;
+  z-index: 10;
 }
 
 .cta-card {
   background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(78, 205, 196, 0.1));
   backdrop-filter: blur(20px);
   border-radius: 30px;
-  padding: 4rem;
+  padding: 5rem 4rem 5rem 4rem;
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.2);
   position: relative;
   overflow: visible;
+  height: auto;
+  min-height: 300px;
+  display: block;
 }
 
 .cta-card::before {
@@ -569,19 +575,19 @@ const steps = [
 .cta-card h2 {
   font-size: 2rem;
   font-weight: 800;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   letter-spacing: -0.02em;
   position: relative;
   z-index: 10;
   word-break: keep-all;
   line-height: 1.5;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1.5rem;
 }
 
 .cta-card p {
   font-size: 1.1rem;
   color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
   position: relative;
   z-index: 10;
   line-height: 1.8;
@@ -596,6 +602,7 @@ const steps = [
   flex-wrap: wrap;
   position: relative;
   z-index: 10;
+  padding-bottom: 1rem;
 }
 
 .btn-primary,
